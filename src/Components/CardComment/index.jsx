@@ -10,7 +10,6 @@ export const CardComment = () => {
   const dispatch = useDispatch();
 
   const comments = useSelector((state) => state.user.comments);
-  console.log(comments);
 
   const handleClick = () => {
     dispatch(addCommentThunk(newComment));
